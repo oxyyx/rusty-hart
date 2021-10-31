@@ -76,14 +76,6 @@ workflows:
           filters:
             tags:
               only: /.*/
-      - format:
-          filters:
-            tags:
-              only: /.*/
-      - lint:
-          filters:
-            tags:
-              only: /.*/
       - coverage:
           filters:
             tags:
