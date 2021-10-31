@@ -5,6 +5,7 @@ jobs:
       - image: circleci/rust
     environment:
       RUSTFLAGS: '-D warnings'
+    resource_class: small
     steps:
       - checkout
       - run:
@@ -30,6 +31,7 @@ jobs:
   security:
     docker:
       - image: circleci/rust
+    resource_class: small
     steps:
       - checkout
       - run:
